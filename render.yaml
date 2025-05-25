@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: ellie-free-voice-app
+    env: python
+    buildCommand: ""
+    startCommand: "gunicorn ellie_free_voice_app:app"
+    envVars:
+      - key: OPENAI_API_KEY
+        value: sk-...4g8A
+
